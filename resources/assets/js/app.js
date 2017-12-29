@@ -26,8 +26,6 @@ Vue.use(BootstrapVue);
 //Vue.component('example', require('./components/Example.vue'));
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.getElementsByName('csrf-token')[0].getAttribute('content');
 
-Vue.component('user-list', require('./components/UserList.vue'));
-
 const router = new VueRouter({
     routes,
 })
